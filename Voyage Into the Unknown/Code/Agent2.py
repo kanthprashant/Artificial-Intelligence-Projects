@@ -316,32 +316,32 @@ for i in range(0, 34, 1):
     density_bumps[0].append(i/100)
     density_bumps[1].append(avg_bumps)
     
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_traj.csv', 'w', encoding='UTF8', newline='') as f:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_traj.csv', 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(dense_traject[0])
         writer.writerow(dense_traject[1])
     
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_discpath.csv', 'w', encoding='UTF8', newline='') as g:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_discpath.csv', 'w', encoding='UTF8', newline='') as g:
         writer = csv.writer(g)
         writer.writerow(dense_discpath[0])
         writer.writerow(dense_discpath[1])
         
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_bumps.csv', 'w', encoding='UTF8', newline='') as h:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_bumps.csv', 'w', encoding='UTF8', newline='') as h:
         writer = csv.writer(h)
         writer.writerow(density_bumps[0])
         writer.writerow(density_bumps[1])
     
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_time.csv', 'w', encoding='UTF8', newline='') as i:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_time.csv', 'w', encoding='UTF8', newline='') as i:
         writer = csv.writer(i)
         writer.writerow(density_time[0])
         writer.writerow(density_time[1])
 
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_proc_cell.csv', 'w', encoding='UTF8', newline='') as k:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_proc_cell.csv', 'w', encoding='UTF8', newline='') as k:
         writer = csv.writer(k)
         writer.writerow(density_cells[0])
         writer.writerow(density_cells[1])
 
-    with open('/Users/prashantkanth/Desktop/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_traj_discpath.csv', 'w', encoding='UTF8', newline='') as m:
+    with open('/Intro to AI-CS520/Projects/Partial Sensing/Output Data/AG2_density_v_traj_discpath.csv', 'w', encoding='UTF8', newline='') as m:
         writer = csv.writer(m)
         writer.writerow(dense_traj_discpath[0])
         writer.writerow(dense_traj_discpath[1])
