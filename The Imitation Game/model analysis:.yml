@@ -1,0 +1,76 @@
+agent: Agent 1
+
+model 1: (Base Model)----done
+    name: ag1_Keras_baseModel
+    layers: 9, 8, 4
+    learning_rate: 0.0025
+    epochs: 10
+    batch_size: 128
+    Accuracy: 97.45
+    Inference: Base Model
+
+model 2: (Increasing a dense layer)----done
+    name: ag1_Keras_9_8_8_4
+    layers: 9, 8, 8, 4
+    learning_rate: 0.0025
+    epochs: 10
+    batch_size: 128
+    Accuracy: 97.27
+    Inference old: Increasing a dense layer has a positive effect on the accuracy of the model, since it is able to learn more features.
+    Inference: Increasing a dense layer has negative efffect on the accuracy, it tries to overfit.
+
+model 3: (Increasing the epochs)----done
+    name: ag1_Keras_15_epochs
+    layers: 9, 8, 4
+    learning_rate: 0.0025
+    epochs: 15
+    batch_size: 128
+    Accuracy: 97.42
+    Inference old: Increasing the number of epochs has a negative effect on the accuracy of the model, since it tries to overfit to the training data.
+    Inference: Increasing the number of epochs by a samll amount, increases the accuracy by a small amount since the model has slightly more number of iterations to fit the data.
+
+model 4:  (Increasing epochs and a Dense layer)----done
+    name: ag1_Keras_15_epochs_dense
+    layers: 9, 8, 8, 4
+    learning_rate: 0.0025
+    epochs: 15
+    batch_size: 128
+    Accuracy: 97.30
+    Inference: Increasing number of epochs and dense layers, does not impact the accuracy rate of the model, it has a slight negative impact as it tries to overfit the data
+
+model 5: (Decreasing the learning rate)----done
+    name: ag1_Keras_lr_0005
+    layers: 9, 8, 4
+    learning_rate: 0.0005
+    epochs: 10
+    batch_size: 128
+    Accuracy: 97.13
+    Inference: Decreasing the learning rate has a negative effect on the accuracy of the model, since it takes too long to get the optimal SGD.
+
+model 6: (Increasing the learning rate)---done
+    name: ag1_Keras_lr_005
+    layers: 9, 8, 4
+    learning_rate: 0.005
+    epochs: 10
+    batch_size: 128
+    Accuracy: 97.26
+    Inference: Increasing the learning rate does has a positive effect on the accuracy of the model, it reaches slowly to SGD.
+
+model 7: (Increasing the batch_size)----done
+    name: ag1_Keras_batch_256
+    layers: 9, 8, 4
+    learning_rate: 0.0025
+    epochs: 10
+    batch_size: 256
+    Accuracy: 97.32
+    Inference: Increasing the batch size has a positive effect on the accuracy of the model, since we have a huge dataset.
+
+model 8: (Adding 2 more Dense layers)
+    name: ag1_Keras_9_8_8_6_4
+    layers: 9, 8, 8, 6, 4
+    learning_rate: 0.0025
+    epochs: 10
+    batch_size: 128
+    Accuracy: 97.38
+    Inference: Increasing a Dense layer has a ppositivr effect on the accuracy of the model, it tries to capture more features of the data.
+               However, it is still slightly off the optimal accuracy attained.
